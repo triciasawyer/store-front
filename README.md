@@ -18,6 +18,9 @@ As a user, I want a clean, easy to use user interface so that I can shop the onl
 
 ### Links and Resources
 
+[Vite](https://vitejs.dev/guide/)
+[Git issues solution](https://www.youtube.com/watch?v=yo2bMGnIKE8)
+
 ### Collaborators
 
 Ryan Gallaway in code review.
