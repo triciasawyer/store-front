@@ -4,7 +4,7 @@ import reducer from './reducer';
 
 const reducers = combineReducers({
     store: reducer,
-})
+});
 
 const store = () => createStore(reducers, composeWithDevTools());
 

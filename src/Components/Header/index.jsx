@@ -2,7 +2,8 @@ function Header() {
 
   return (
     <>
-      <h2>Our Store</h2>
+      <h1>Our Store</h1>
+      
     </>
   )
 }

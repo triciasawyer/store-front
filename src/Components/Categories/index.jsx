@@ -1,9 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { set } from '../../store/reducer';
-
-//Weird behavior with importing these, crashing page
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import { set } from '../../store/reducer';
+
 
 function Categories() {
   const { categories } = useSelector((state) => state.store)
