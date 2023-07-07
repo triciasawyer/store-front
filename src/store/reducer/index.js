@@ -37,4 +37,4 @@ export const set = (category) => {
     }
 }
 
-export default reducer;
+export default reducer
