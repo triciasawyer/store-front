@@ -2,11 +2,7 @@
 
 ## Project: Beginning of the process in creating an e-Commerce storefront using React with Redux, coupled with your live API server
 
-</br>
-
 ### Author: Tricia Sawyer
-
-</br>
 
 ### Problem Domain
 
