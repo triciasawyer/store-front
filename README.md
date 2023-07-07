@@ -30,7 +30,8 @@ As a user, I want a clean, easy to use user interface so that I can shop the onl
 
 ### Collaborators
 
-Ryan Gallaway in code review.
+- Ryan Gallaway in code review
+- Stephen heped me in lab 36 with fixing the categories button display
 
 ### UML
 
