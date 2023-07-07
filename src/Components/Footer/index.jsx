@@ -2,7 +2,7 @@ function Footer() {
 
   return (
     <>
-      <h2> Footer component lives here</h2>
+      <footer>&copy;2023 Tricia Sawyer</footer>
     </>
   )
 }

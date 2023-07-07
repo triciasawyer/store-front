@@ -19,8 +19,21 @@ let initialState = {
 
 function reducer(state = initialState, action) {
     switch (action.type) {
+        case 'SET':
+            return {
+                ...state,
+                activeCategory: action.payload,
+                products: initialState.products.filter(product => product.category === action.payload.name)
+            }
         default:
             return state;
+    }
+}
+
+export const set = (category) => {
+    return {
+        type: 'SET',
+        payload: category,
     }
 }
 
