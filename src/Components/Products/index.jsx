@@ -25,7 +25,7 @@ function Products() {
                                         sx={{ height: 140 }} image={`https://source.unsplash.com/random?${product.name}`}
                                         title={product.name} />
                                     <CardContent>
-                                        <Typography gutterButtom variant="h5" component="div">
+                                        <Typography gutterBottom variant="h5" component="div">
                                             {product.name}
                                         </Typography>
                                     </CardContent>
