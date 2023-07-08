@@ -20,8 +20,6 @@ As a user, I want a clean, easy to use user interface so that I can shop the onl
 
 [Code sandbox](https://6k3j56-5173.csb.app/)
 
-[Code sandbox - redux branch](https://t56556-5173.csb.app/)
-
 [Vite](https://vitejs.dev/guide/)
 
 [Git issues solution](https://www.youtube.com/watch?v=yo2bMGnIKE8)
@@ -35,7 +33,7 @@ As a user, I want a clean, easy to use user interface so that I can shop the onl
 
 ### UML
 
-![UML](./assets/)
+![UML](./assets/lab36-UML.png)
 
 ### Set up
 
