@@ -18,13 +18,22 @@ As a user, I want a clean, easy to use user interface so that I can shop the onl
 
 ### Links and Resources
 
+[Code sandbox](https://6k3j56-5173.csb.app/)
+
+[Vite](https://vitejs.dev/guide/)
+
+[Git issues solution](https://www.youtube.com/watch?v=yo2bMGnIKE8)
+
+[Images](https://awik.io/generate-random-images-unsplash-without-using-api/)
+
 ### Collaborators
 
-Ryan Gallaway in code review.
+- Ryan Gallaway in code review
+- Stephen heped me in lab 36 with fixing the categories button display
 
 ### UML
 
-![UML](./assets/)
+![UML](./assets/lab36-UML.png)
 
 ### Set up
 
