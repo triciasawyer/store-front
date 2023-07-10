@@ -6,8 +6,8 @@ function Header() {
   const { cart } = useSelector(state => state.cart);
   return (
     <>
-      <AppBar className='app-bar'>
-        <Toolbar>
+      <AppBar>
+        <Toolbar className='app-bar'>
           <Grid container>
             <Grid item>
               <Typography variant="h4">Our Store</Typography>
