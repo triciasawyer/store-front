@@ -4,7 +4,7 @@ function Footer() {
 
   return (
     <>
-      <footer data-testid="footer" className='footer'>&copy;2023 Tricia Sawyer</footer>
+      <footer data-testid="footer">&copy;2023 Tricia Sawyer</footer>
     </>
   )
 }

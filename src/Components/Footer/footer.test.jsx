@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import Footer from '.';
+import Footer from './index';
 
+// failing with scss
 describe('Footer components', () => {
     test('renders content', () => {
         render(<Footer />);
