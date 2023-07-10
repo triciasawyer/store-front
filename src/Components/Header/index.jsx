@@ -1,6 +1,6 @@
 import { AppBar, Grid, Toolbar, Typography } from '@mui/material';
 import { useSelector } from 'react-redux';
-import './styles.scss';
+// import './styles.scss';
 
 function Header() {
   const { cart } = useSelector(state => state.cart);
