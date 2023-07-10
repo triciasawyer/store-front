@@ -45,6 +45,8 @@ Changes the cart total in the header. If two different products are in the cart 
 
 [Randomized images](https://awik.io/generate-random-images-unsplash-without-using-api/)
 
+[Testing with vite](https://zaferayan.medium.com/how-to-setup-jest-and-react-testing-library-in-vite-project-2600f2d04bdd)
+
 ### Collaborators
 
 - Ryan Gallaway in code review

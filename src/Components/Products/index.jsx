@@ -18,7 +18,7 @@ function Products() {
         <>
             <When condition={activeCategory}>
                 <h2>{activeCategory.displayName}</h2>
-                <h4>Category Description Goes Here</h4>
+                <h4 style={{ marginBottom: '10px', textAlign: 'center' }}>Category Description Goes Here</h4>
                 <Grid container spacing={2} width="80%" marging="auto">
                     {
                         products.map((product, index) => (

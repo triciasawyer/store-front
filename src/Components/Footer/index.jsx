@@ -4,9 +4,9 @@ function Footer() {
 
   return (
     <>
-      <footer>&copy;2023 Tricia Sawyer</footer>
+      <footer data-testid="footer" className='footer'>&copy;2023 Tricia Sawyer</footer>
     </>
   )
 }
 
-export default Footer
+export default Footer;
