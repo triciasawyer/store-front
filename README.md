@@ -52,6 +52,7 @@ Changes the cart total in the header. If two different products are in the cart 
 - Ryan Gallaway in code review
 - Stephen heped me in lab 36 with fixing the categories button display
 - Code review for lab 37 and chat gpt to help write tests
+- Daniel helped with reviewing code and helping me see some missing things that caused bugs
 
 ### UML
 
