@@ -25,7 +25,7 @@ export const getCategories = () => async (dispatch, getState) => {
 }
 
 
- export const { setCategory } = categorySlice.actions;
+ export const { setCategory, setInitialCategories } = categorySlice.actions;
  export default categorySlice.reducer;
 
 
