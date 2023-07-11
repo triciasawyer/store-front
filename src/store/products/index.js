@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-const initialState
-[
+const initialState = [
     { name: 'TV', category: 'electronics', price: 699.00, inStock: 5 },
     { name: 'Radio', category: 'electronics', price: 99.00, inStock: 15 },
     { name: 'Shirt', category: 'clothing', price: 9.00, inStock: 25 },
@@ -15,25 +14,25 @@ const productSlice = createSlice({
     name: 'products',
     initialState,
     reducers: {
-        set: (state, action) => this.initialState.filter(product => product.category === action.payload.name),
-        add: (state, action) => state.products.map(product => product.name === action.payload.name ? {...product, inStock: product.inStock -1} : product),
-        remove: (state, action) =>  state.products.map(product => product.name === action.payload.name ? {...product, inStock: product.inStock + 1} : product),
+        set: (state, action) => initialState.filter(product => product.category === action.payload.name),
+        add: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock - 1 } : product),
+        remove: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock + 1 } : product),
 
     }
-})
+});
 
 
-export default productSlice
+export default productSlice.reducer;
 
 
-function productsReducer(state = initialState, action) {
-    switch (action.type) {
-        case 'SET':
-            return {products: initialState.products.filter(product => product.category === action.payload.name)};
-        default:
-            return state;
-    }
-    // add ADD and remove
-}
 
-export default productsReducer;
+// function productsReducer(state = initialState, action) {
+//     switch (action.type) {
+//         case 'SET':
+//             return {products: initialState.products.filter(product => product.category === action.payload.name)};
+//         default:
+//             return state;
+//     }
+// }
+
+// export default productsReducer;
