@@ -32,10 +32,19 @@ function Products() {
                                             {product.name}
                                         </Typography>
                                     </CardContent>
-                                    <CardActions>
+                                    {/* <CardActions>
                                         <Button onClick={() => dispatch(add(product))} size="small">ADD TO CART</Button>
                                         <Button size="small">VIEW DETAILS</Button>
+                                    </CardActions> */}
+                                    <CardActions>
+                                        {product.inStock > 0 ? (
+                                            <Button onClick={() => dispatch(add(product))} size="small">ADD TO CART</Button>
+                                        ) : (
+                                            <Button size="small" disabled>ADD TO CART</Button>
+                                        )}
+                                        <Button size="small">VIEW DETAILS</Button>
                                     </CardActions>
+
                                 </Card>
                             </Grid>
                         ))

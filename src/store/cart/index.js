@@ -12,12 +12,19 @@ function cartReducer(state = initialState, action) {
                 ]
             }
         case 'REMOVE':
-            return {
-                ...state,
-                cart: state.cart.filter(product => product.name !== action.payload.name)
-            };
+            const itemIndex = state.cart.findIndex(product => product.name === action.payload.name);
+            if (itemIndex !== -1) {
+                const newCart = [...state.cart];
+                newCart.splice(itemIndex, 1);
+                return {
+                    ...state,
+                    cart: newCart
+                };
+            }
+            return state;
         default:
             return state;
+
     }
 }
 
