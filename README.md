@@ -33,7 +33,16 @@ Chooses a category and sees a list of products.
 Clicks the “Add to Cart” button on any product.
 Sees a list of all products in the "< SimpleCart />" side menu.
 Clicks the delete button on an item and sees the item removed (see stretch goals for this lab).
-Changes the cart total in the header. If two different products are in the cart you should see: CART (2)
+Changes the cart total in the header. If two different products are in the cart you should see: CART (2).
+
+- Lab 38
+
+In phase 3, we will be connecting our Virtual Store to a live API so that our data is persistent and able to be separately managed.
+
+The user stories from Phases 1 and 2 remain unchanged. For this phase, we are now adding the following new user stories to meet the new requirements.
+
+As a user, I want to interact with live inventory so that I have confidence that the displayed products are in stock.
+As a user, I want to know to that when I add an item to my cart, that it is removed from inventory so that no other users can purchase it.
 
 ### Links and Resources
 
