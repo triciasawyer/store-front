@@ -23,7 +23,7 @@ function Products() {
     };
 
     useEffect(() => {
-        dispatch(getProducts(activeCategory))
+        dispatch(getProducts(activeCategory.name))
     }, [activeCategory]);
 
     return (
