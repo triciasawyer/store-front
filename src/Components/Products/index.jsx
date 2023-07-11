@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { When } from 'react-if';
 import Card from '@mui/material/Card';
@@ -8,7 +9,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { addToCart } from '../../store/cart';
-import { addProduct } from '../../store/products';
+import { addProduct, getProducts } from '../../store/products';
+
 
 function Products() {
     const { activeCategory } = useSelector((state) => state.categories)
@@ -18,7 +20,11 @@ function Products() {
     const addDispatcher = (product) => {
         dispatch(addToCart(product));
         dispatch(addProduct(product));
-    }
+    };
+
+    useEffect(() => {
+        dispatch(getProducts(activeCategory))
+    }, [activeCategory]);
 
     return (
         <>
