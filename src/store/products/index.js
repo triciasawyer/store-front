@@ -23,10 +23,20 @@ const productSlice = createSlice({
 
 // note - currying
 export const getProducts = (activeCategory) => async (dispatch) => {
-    let response = await axios.get('https://api-js401.herokuapp.com/api/v1/products');
-    let products = response.data.results.filter(product => product.category === activeCategory);
-    dispatch(setProducts(products));
+    let response = await axios.get(`https://api-js401.herokuapp.com/api/v1/products?category=${activeCategory}`);
+    dispatch(setProducts(response.data.results));
 }
+
+export const incrementInventoryOnRemove = (product) => (dispatch) => {
+
+};
+
+export const decrementInventoryOnAdd = (product) => async (dispatch) => {
+    product = {...product, inStock: product.inStock - 1};
+    await axios.put(`https://api-js401.herokuapp.com/api/v1/products/${product._id}`, product)
+    let response = 
+};
+
 
 export const { setProducts, addProduct, removeProduct } = productSlice.actions;
 export default productSlice.reducer;

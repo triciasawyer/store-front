@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { addToCart } from '../../store/cart';
-import { addProduct, getProducts } from '../../store/products';
+import { decrementInventoryOnAdd, getProducts } from '../../store/products';
 
 
 function Products() {
@@ -19,7 +19,7 @@ function Products() {
     const dispatch = useDispatch();
     const addDispatcher = (product) => {
         dispatch(addToCart(product));
-        dispatch(addProduct(product));
+        dispatch(decrementInventoryOnAdd(product));
     };
 
     useEffect(() => {
