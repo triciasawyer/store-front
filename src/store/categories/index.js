@@ -12,30 +12,11 @@ const categorySlice = createSlice({
         activeCategory: ''
     },
     reducers: {
-        set: (state, action) => {
+        setCategory: (state, action) => {
             return {...state, activeCategory: action.payload}
         }
     }
 })
 
- export const { set } = categorySlice.actions;
+ export const { setCategory } = categorySlice.actions;
  export default categorySlice.reducer;
-
-
-
-
-
-// function categoryReducer(state = initialState, action) {
-//     switch (action.type) {
-//         case 'SET':
-//             return {
-//                 ...state,
-//                 activeCategory: action.payload,
-//             }
-//         default:
-//             return state;
-//     }
-// }
-
-
-// export default categoryReducer;

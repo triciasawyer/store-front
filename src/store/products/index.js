@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 const initialState = [
     { name: 'TV', category: 'electronics', price: 699.00, inStock: 5 },
     { name: 'Radio', category: 'electronics', price: 99.00, inStock: 15 },
@@ -14,14 +15,13 @@ const productSlice = createSlice({
     name: 'products',
     initialState,
     reducers: {
-        set: (state, action) => initialState.filter(product => product.category === action.payload.name),
-        add: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock - 1 } : product),
-        remove: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock + 1 } : product),
-
+        setProducts: (state, action) => initialState.filter(product => product.category === action.payload.name),
+        addProduct: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock - 1 } : product),
+        removeProduct: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock + 1 } : product),
     }
 });
 
-
+export const { setProducts, addProduct, removeProduct } = productSlice.actions;
 export default productSlice.reducer;
 
 
