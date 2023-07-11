@@ -17,6 +17,7 @@ function Products() {
     const { products } = useSelector((state) => state)
     // console.log('Productsss', products);
     const dispatch = useDispatch();
+    
     const addDispatcher = (product) => {
         dispatch(addToCart(product));
         dispatch(decrementInventoryOnAdd(product));

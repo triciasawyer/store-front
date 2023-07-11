@@ -1,17 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
 import { When } from 'react-if';
 import { removeFromCart } from '../../store/cart';
-import { removeProduct } from '../../store/products';
-
+import { incrementInventoryOnRemove } from '../../store/products';
 import './styles.scss';
 
 function SimpleCart() {
     const { cart } = useSelector(state => state);
     const dispatch = useDispatch();
 
-    const removeDispatcher = () => {
+    const removeDispatcher = (product) => {
         dispatch(removeFromCart(product));
-        dispatch(removeProduct(product));
+        dispatch(incrementInventoryOnRemove(product));
     }
 
     return (

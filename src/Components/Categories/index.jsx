@@ -8,9 +8,9 @@ function Categories() {
   const { categories } = useSelector((state) => state.categories)
   // console.log('Categories', categories);
   const dispatch = useDispatch();
+
   const setDispatcher = (category) => {
     dispatch(setCategory(category));
-    // dispatch(setProducts(category));
   };
 
   useEffect(() => {

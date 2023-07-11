@@ -22,7 +22,7 @@ export const getCategories = () => async (dispatch, getState) => {
     // make call to get categories from db
     let response = await axios.get('https://api-js401.herokuapp.com/api/v1/categories');
     dispatch(setInitialCategories(response.data.results));
-}
+};
 
 
  export const { setCategory, setInitialCategories } = categorySlice.actions;

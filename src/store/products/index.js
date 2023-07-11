@@ -16,7 +16,7 @@ const productSlice = createSlice({
     initialState: [],
     reducers: {
         setProducts: (state, action) => action.payload,
-        addProduct: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock - 1 } : product),
+        // addProduct: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock - 1 } : product),
         removeProduct: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock + 1 } : product),
     }
 });
@@ -27,14 +27,18 @@ export const getProducts = (activeCategory) => async (dispatch) => {
     dispatch(setProducts(response.data.results));
 }
 
-export const incrementInventoryOnRemove = (product) => (dispatch) => {
 
+export const incrementInventoryOnRemove = (product) => async (dispatch) => {
+    product = {...product, inStock: product.inStock + 1};
+    const res = await axios.put(`https://api-js401.herokuapp.com/api/v1/products/${product._id}`, product);
+    dispatch(getProducts(product.category));
 };
+
 
 export const decrementInventoryOnAdd = (product) => async (dispatch) => {
     product = {...product, inStock: product.inStock - 1};
     await axios.put(`https://api-js401.herokuapp.com/api/v1/products/${product._id}`, product)
-    let response = 
+    dispatch(getProducts(product.category));
 };
 
 
