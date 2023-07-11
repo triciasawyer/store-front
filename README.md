@@ -56,11 +56,17 @@ As a user, I want to know to that when I add an item to my cart, that it is remo
 
 [Testing with vite](https://zaferayan.medium.com/how-to-setup-jest-and-react-testing-library-in-vite-project-2600f2d04bdd)
 
+[Redux toolkit](https://redux-toolkit.js.org/api/configureStore)
+
+[API products](https://api-js401.herokuapp.com/api/v1/products)
+
+[API categories](https://api-js401.herokuapp.com/api/v1/categories)
+
 ### Collaborators
 
 - Ryan Gallaway in code review
 - Stephen heped me in lab 36 with fixing the categories button display
-- Code review for lab 37 and chat gpt to help write tests
+- Code review for lab 37 and 38 and chat gpt to help write tests
 - Daniel helped with reviewing code and helping me see some missing things that caused bugs
 
 ### UML
@@ -78,3 +84,5 @@ Follow the steps given
 - `npm run dev`
 
 - `npm i redux react-redux @redux-devtools/extension`
+
+- `npm i @reduxjs/toolkit`
