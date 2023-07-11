@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { When } from 'react-if';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -7,15 +7,18 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import { add } from "../../store/actions";
 
 function Products() {
-    const { activeCategory, products } = useSelector((state) => state.store)
-
+    const { activeCategory } = useSelector((state) => state.categories)
+    const { products } = useSelector((state) => state.products)
+    // console.log('Productsss', products);
+    const dispatch = useDispatch();
     return (
         <>
             <When condition={activeCategory}>
                 <h2>{activeCategory.displayName}</h2>
-                <h4>Category Description Goes Here</h4>
+                <h4 style={{ marginBottom: '10px', textAlign: 'center' }}>Category Description Goes Here</h4>
                 <Grid container spacing={2} width="80%" marging="auto">
                     {
                         products.map((product, index) => (
@@ -29,10 +32,19 @@ function Products() {
                                             {product.name}
                                         </Typography>
                                     </CardContent>
+                                    {/* <CardActions>
+                                        <Button onClick={() => dispatch(add(product))} size="small">ADD TO CART</Button>
+                                        <Button size="small">VIEW DETAILS</Button>
+                                    </CardActions> */}
                                     <CardActions>
-                                        <Button size="small">ADD TO CART</Button>
+                                        {product.inStock > 0 ? (
+                                            <Button onClick={() => dispatch(add(product))} size="small">ADD TO CART</Button>
+                                        ) : (
+                                            <Button size="small" disabled>ADD TO CART</Button>
+                                        )}
                                         <Button size="small">VIEW DETAILS</Button>
                                     </CardActions>
+
                                 </Card>
                             </Grid>
                         ))
