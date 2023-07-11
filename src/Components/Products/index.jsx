@@ -7,11 +7,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import { add } from "../../store/actions";
+import { add } from '../../store/cart';
 
 function Products() {
     const { activeCategory } = useSelector((state) => state.categories)
-    const { products } = useSelector((state) => state.products)
+    const { products } = useSelector((state) => state)
     // console.log('Productsss', products);
     const dispatch = useDispatch();
     return (

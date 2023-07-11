@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import Button from '@mui/material/Button';
-import { set } from '../../store/actions';
+import { set } from '../../store/categories';
 
 
 function Categories() {

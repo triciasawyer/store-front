@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { When } from 'react-if';
-import { remove } from "../../store/actions";
+import { remove } from '../../store/cart';
 import './styles.scss';
 
 function SimpleCart() {
-    const { cart } = useSelector(state => state.cart);
+    const { cart } = useSelector(state => state);
     const dispatch = useDispatch();
 
     return (
