@@ -52,7 +52,7 @@ function Products() {
                                         ) : (
                                             <Button size="small" disabled>ADD TO CART</Button>
                                         )}
-                                        <Button component={Link} to={`/productDetails/${product._id}`} size="small">VIEW DETAILS</Button>
+                                        <Button size="small" component={Link} to={`/productDetails/${product._id}`}>VIEW DETAILS</Button>
                                     </CardActions>
 
                                 </Card>
