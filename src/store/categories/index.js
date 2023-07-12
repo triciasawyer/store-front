@@ -20,10 +20,14 @@ const categorySlice = createSlice({
 // this is called function currying (with multiple arrow functions, returning another function and then finds the action)
 export const getCategories = () => async (dispatch, getState) => {
     // make call to get categories from db
-    let response = await axios.get('https://api-js401.herokuapp.com/api/v1/categories');
-    dispatch(setInitialCategories(response.data.results));
-};
+    try {
+        let response = await axios.get('https://api-js401.herokuapp.com/api/v1/categories');
+        dispatch(setInitialCategories(response.data.results));
+    } catch (err) {
+        console.log('error from categories', err);
+    }
+}
 
 
- export const { setCategory, setInitialCategories } = categorySlice.actions;
- export default categorySlice.reducer;
+export const { setCategory, setInitialCategories } = categorySlice.actions;
+export default categorySlice.reducer;

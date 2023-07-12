@@ -17,7 +17,7 @@ const productSlice = createSlice({
     reducers: {
         setProducts: (state, action) => action.payload,
         // addProduct: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock - 1 } : product),
-        removeProduct: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock + 1 } : product),
+        // removeProduct: (state, action) => state.map(product => product.name === action.payload.name ? { ...product, inStock: product.inStock + 1 } : product),
     }
 });
 
@@ -42,7 +42,7 @@ export const decrementInventoryOnAdd = (product) => async (dispatch) => {
 };
 
 
-export const { setProducts, addProduct, removeProduct } = productSlice.actions;
+export const { setProducts, addProduct, removeProduct } = productSlice.actions
 export default productSlice.reducer;
 
 
