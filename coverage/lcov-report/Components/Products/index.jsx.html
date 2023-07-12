@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">87.5% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/8</span>
+                <span class='fraction'>0/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/5</span>
+                <span class='fraction'>0/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/6</span>
+                <span class='fraction'>0/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -121,7 +121,20 @@
 <a name='L56'></a><a href='#L56'>56</a>
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -133,19 +146,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -179,7 +205,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useDispatch, useSelector } from "react-redux";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { When } from 'react-if';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -188,22 +215,34 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import { add } from "../../store/actions";
+import { addToCart } from '../../store/cart';
+import { decrementInventoryOnAdd, getProducts } from '../../store/products';
 &nbsp;
-function Products() {
-    const { activeCategory } = useSelector((state) =&gt; state.categories)
-    const { products } = useSelector((state) =&gt; state.products)
+&nbsp;
+function <span class="fstat-no" title="function not covered" >Products(</span>) {
+    const { activeCategory } = <span class="cstat-no" title="statement not covered" >useSelector(<span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; <span class="cstat-no" title="statement not covered" >state.categories)</span></span>
+    const { products } = <span class="cstat-no" title="statement not covered" >useSelector(<span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; <span class="cstat-no" title="statement not covered" >state)</span></span>
     // console.log('Productsss', products);
-    const dispatch = useDispatch();
-    return (
+    const dispatch = <span class="cstat-no" title="statement not covered" >useDispatch();</span>
+    
+    const addDispatcher = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(p</span>roduct) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        dispatch(addToCart(product));</span>
+<span class="cstat-no" title="statement not covered" >        dispatch(decrementInventoryOnAdd(product));</span>
+    };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    useEffect(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        dispatch(getProducts(activeCategory.name))</span>
+    }, [activeCategory]);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return (</span>
         &lt;&gt;
             &lt;When condition={activeCategory}&gt;
                 &lt;h2&gt;{activeCategory.displayName}&lt;/h2&gt;
                 &lt;h4 style={{ marginBottom: '10px', textAlign: 'center' }}&gt;Category Description Goes Here&lt;/h4&gt;
                 &lt;Grid container spacing={2} width="80%" marging="auto"&gt;
                     {
-                        products.map((product, index) =&gt; (
-                            &lt;Grid key={`products${index}`} item xs={12} md={6} lg={4} &gt;
+                        products.map(<span class="fstat-no" title="function not covered" >(p</span>roduct, index) =&gt; (
+<span class="cstat-no" title="statement not covered" >                            &lt;Grid key={`products${index}`} item xs={12} md={6} lg={4} &gt;</span>
                                 &lt;Card sx={{ maxWidth: 345 }}&gt;
                                     &lt;CardMedia
                                         sx={{ height: 140 }} image={`https://source.unsplash.com/random?${product.name}`}
@@ -219,7 +258,7 @@ function Products() {
                                     &lt;/CardActions&gt; */}
                                     &lt;CardActions&gt;
                                         {product.inStock &gt; 0 ? (
-<span class="branch-0 cbranch-no" title="branch not covered" >                                            &lt;Button onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch(add(product))}</span> size="small"&gt;ADD TO CART&lt;/Button&gt;</span>
+                                            &lt;Button onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >addDispatcher(product)}</span> size="small"&gt;ADD TO CART&lt;/Button&gt;
                                         ) : (
                                             &lt;Button size="small" disabled&gt;ADD TO CART&lt;/Button&gt;
                                         )}
@@ -244,7 +283,7 @@ export default Products</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-07-11T03:40:31.386Z
+                at 2023-07-12T04:19:56.197Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

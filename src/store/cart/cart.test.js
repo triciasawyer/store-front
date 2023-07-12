@@ -1,43 +1,36 @@
-import cartReducer from './index';
+import cartReducer, { addToCart, removeFromCart } from './index';
 
 describe('Cart Reducer', () => {
   test('should add a product to the cart', () => {
-    const initialState = { cart: [] };
+    const initialState = [];
     const product = { name: 'Shirt', price: 10.99 };
-    const action = { type: 'ADD', payload: product };
 
-    const newState = cartReducer(initialState, action);
+    const newState = cartReducer(initialState, addToCart(product));
 
-    expect(newState.cart).toHaveLength(1);
-    expect(newState.cart[0]).toEqual(product);
+    expect(newState).toHaveLength(1);
+    expect(newState[0]).toEqual(product);
   });
-
 
   test('should remove a product from the cart', () => {
-    const initialState = {
-      cart: [
-        { name: 'Shirt', price: 10.99 },
-        { name: 'Pants', price: 19.99 },
-        { name: 'Shoes', price: 39.99 },
-      ],
-    };
+    const initialState = [
+      { name: 'Shirt', price: 10.99 },
+      { name: 'Pants', price: 19.99 },
+      { name: 'Shoes', price: 39.99 },
+    ];
     const product = { name: 'Pants', price: 19.99 };
-    const action = { type: 'REMOVE', payload: product };
 
-    const newState = cartReducer(initialState, action);
+    const newState = cartReducer(initialState, removeFromCart(product));
 
-    expect(newState.cart).toHaveLength(2);
-    expect(newState.cart).not.toContain(product);
+    expect(newState).toHaveLength(2);
+    expect(newState).not.toContain(product);
   });
 
-
   test('should return the initial state for unknown action types', () => {
-    const initialState = { cart: [] };
+    const initialState = [];
     const action = { type: 'UNKNOWN_ACTION', payload: {} };
 
     const newState = cartReducer(initialState, action);
 
     expect(newState).toEqual(initialState);
   });
-  
 });

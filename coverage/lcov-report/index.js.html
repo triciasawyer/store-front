@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">60% </span>
+                <span class="strong">62.5% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/5</span>
+                <span class='fraction'>5/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/3</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>2/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">71.42% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/4</span>
+                <span class='fraction'>5/7</span>
             </div>
         
             
@@ -85,7 +85,23 @@
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -93,50 +109,73 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">let initialState = {
-    products: [
-        { name: 'TV', category: 'electronics', price: 699.00, inStock: 5 },
-        { name: 'Radio', category: 'electronics', price: 99.00, inStock: 15 },
-        { name: 'Shirt', category: 'clothing', price: 9.00, inStock: 25 },
-        { name: 'Socks', category: 'clothing', price: 12.00, inStock: 10 },
-        { name: 'Apples', category: 'food', price: .99, inStock: 500 },
-        { name: 'Eggs', category: 'food', price: 1.99, inStock: 12 },
-        { name: 'Bread', category: 'food', price: 2.39, inStock: 90 },
-    ]
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
+&nbsp;
+const categorySlice = createSlice({
+    name: 'categories',
+    initialState: {
+        categories: [],
+        activeCategory: ''
+    },
+    reducers: {
+        setCategory: (state, action) =&gt; {
+            return {...state, activeCategory: action.payload}
+        },
+        setInitialCategories: (state, action) =&gt; {
+            state.categories = action.payload;
+        }
+    }
+});
+&nbsp;
+// this is called function currying (with multiple arrow functions, returning another function and then finds the action)
+export const getCategories = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >as</span>ync (dispatch, getState) =&gt; {</span>
+    // make call to get categories from db
+    let response = <span class="cstat-no" title="statement not covered" >await axios.get('https://api-js401.herokuapp.com/api/v1/categories');</span>
+<span class="cstat-no" title="statement not covered" >    dispatch(setInitialCategories(response.data.results));</span>
 };
 &nbsp;
-function productsReducer(state = initialState, action) {
-    switch (action.type) {
-<span class="branch-0 cbranch-no" title="branch not covered" >        case 'SET':</span>
-<span class="cstat-no" title="statement not covered" >            return {products: initialState.products.filter(<span class="fstat-no" title="function not covered" >pr</span>oduct =&gt; <span class="cstat-no" title="statement not covered" >product.category === action.payload.name)</span>};</span>
-        default:
-            return state;
-    }
-}
 &nbsp;
-export default productsReducer;
-&nbsp;</pre></td></tr></table></pre>
+ export const { setCategory, setInitialCategories } = categorySlice.actions;
+ export default categorySlice.reducer;
+&nbsp;
+&nbsp;
+&nbsp;
+//  { name: 'electronics', displayName: 'Electronics' },
+//             { name: 'food', displayName: 'Food' },
+//             { name: 'clothing', displayName: 'Clothing' },
+//         ],</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-07-10T17:21:32.704Z
+                at 2023-07-12T04:24:12.724Z
             </div>
         <script src="prettify.js"></script>
         <script>
