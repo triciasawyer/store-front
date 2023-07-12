@@ -1,4 +1,4 @@
-# Lab 36-37
+# Lab 36-39
 
 ## Project: Beginning of the process in creating an e-Commerce storefront using React with Redux, coupled with your live API server
 
