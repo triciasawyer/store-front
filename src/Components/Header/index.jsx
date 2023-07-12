@@ -1,19 +1,24 @@
-import { AppBar, Grid, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, Grid, Toolbar, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-// import './styles.scss';
+import './styles.scss';
 
 function Header() {
-  const { cart } = useSelector(state => state);
+  const { cart } = useSelector(state => state.cart);
   return (
     <>
       <AppBar>
         <Toolbar className='app-bar'>
           <Grid container>
             <Grid item>
-              <Typography variant="h4">Our Store</Typography>
+              <Button component={Link} to="/">
+                <Typography className="header-color" variant="h4">Our Store</Typography>
+              </Button>
             </Grid>
             <Grid item xs style={{ textAlign: 'right', alignSelf: 'center' }}>
-              <Typography>CART ({cart.length})</Typography>
+              <Button component={Link} to="/cart">
+              <Typography className="header-color">CART ({cart.length})</Typography>
+              </Button>
             </Grid>
 
           </Grid>

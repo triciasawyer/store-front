@@ -27,10 +27,3 @@ export const getCategories = () => async (dispatch, getState) => {
 
  export const { setCategory, setInitialCategories } = categorySlice.actions;
  export default categorySlice.reducer;
-
-
-
-//  { name: 'electronics', displayName: 'Electronics' },
-//             { name: 'food', displayName: 'Food' },
-//             { name: 'clothing', displayName: 'Clothing' },
-//         ],

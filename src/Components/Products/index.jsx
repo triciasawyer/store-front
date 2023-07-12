@@ -13,8 +13,8 @@ import { decrementInventoryOnAdd, getProducts } from '../../store/products';
 
 
 function Products() {
-    const { activeCategory } = useSelector((state) => state.categories)
-    const { products } = useSelector((state) => state)
+    const activeCategory = useSelector((state) => state.categories.activeCategory);
+    const products = useSelector((state) => state.products);
     // console.log('Productsss', products);
     const dispatch = useDispatch();
     
