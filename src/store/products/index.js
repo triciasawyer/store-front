@@ -11,6 +11,9 @@ const initialState = [
     { name: 'Bread', category: 'food', price: 2.39, inStock: 90 },
 ];
 
+/* The `createSlice` function is a utility function provided by Redux Toolkit that helps simplify the
+process of creating Redux slices. A Redux slice is a collection of Redux-related code that includes
+the reducer function and the actions associated with that reducer. */
 const productSlice = createSlice({
     name: 'products',
     initialState: [],
