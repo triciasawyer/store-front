@@ -1,4 +1,4 @@
-# Lab 36-37
+# Lab 36-38
 
 ## Project: Beginning of the process in creating an e-Commerce storefront using React with Redux, coupled with your live API server
 
@@ -33,7 +33,16 @@ Chooses a category and sees a list of products.
 Clicks the “Add to Cart” button on any product.
 Sees a list of all products in the "< SimpleCart />" side menu.
 Clicks the delete button on an item and sees the item removed (see stretch goals for this lab).
-Changes the cart total in the header. If two different products are in the cart you should see: CART (2)
+Changes the cart total in the header. If two different products are in the cart you should see: CART (2).
+
+- Lab 38
+
+In phase 3, we will be connecting our Virtual Store to a live API so that our data is persistent and able to be separately managed.
+
+The user stories from Phases 1 and 2 remain unchanged. For this phase, we are now adding the following new user stories to meet the new requirements.
+
+As a user, I want to interact with live inventory so that I have confidence that the displayed products are in stock.
+As a user, I want to know to that when I add an item to my cart, that it is removed from inventory so that no other users can purchase it.
 
 ### Links and Resources
 
@@ -47,11 +56,17 @@ Changes the cart total in the header. If two different products are in the cart 
 
 [Testing with vite](https://zaferayan.medium.com/how-to-setup-jest-and-react-testing-library-in-vite-project-2600f2d04bdd)
 
+[Redux toolkit](https://redux-toolkit.js.org/api/configureStore)
+
+[API products](https://api-js401.herokuapp.com/api/v1/products)
+
+[API categories](https://api-js401.herokuapp.com/api/v1/categories)
+
 ### Collaborators
 
 - Ryan Gallaway in code review
 - Stephen heped me in lab 36 with fixing the categories button display
-- Code review for lab 37 and chat gpt to help write tests
+- Code review for lab 37 and 38 and chat gpt to help write tests
 - Daniel helped with reviewing code and helping me see some missing things that caused bugs
 
 ### UML
@@ -69,3 +84,5 @@ Follow the steps given
 - `npm run dev`
 
 - `npm i redux react-redux @redux-devtools/extension`
+
+- `npm i @reduxjs/toolkit`

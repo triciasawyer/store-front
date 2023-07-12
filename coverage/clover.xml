@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1689046831405" clover="3.2.0">
-  <project timestamp="1689046831405" name="All files">
-    <metrics statements="35" coveredstatements="31" conditionals="14" coveredconditionals="12" methods="17" coveredmethods="14" elements="66" coveredelements="57" complexity="0" loc="35" ncloc="35" packages="7" files="8" classes="8"/>
+<coverage generated="1689135874764" clover="3.2.0">
+  <project timestamp="1689135874764" name="All files">
+    <metrics statements="18" coveredstatements="16" conditionals="2" coveredconditionals="1" methods="11" coveredmethods="9" elements="31" coveredelements="26" complexity="0" loc="18" ncloc="18" packages="6" files="6" classes="6"/>
     <package name="Components.Footer">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.jsx" path="/Users/triciasawyer/projects/courses/code-401/store-front/src/Components/Footer/index.jsx">
@@ -17,69 +17,43 @@
         <line num="7" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="Components.Products">
-      <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="4"/>
-      <file name="index.jsx" path="/Users/triciasawyer/projects/courses/code-401/store-front/src/Components/Products/index.jsx">
-        <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="4"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-      </file>
-    </package>
     <package name="store">
-      <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-      <file name="actions.js" path="/Users/triciasawyer/projects/courses/code-401/store-front/src/store/actions.js">
-        <metrics statements="6" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-      </file>
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.js" path="/Users/triciasawyer/projects/courses/code-401/store-front/src/store/index.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
       </file>
     </package>
     <package name="store.cart">
-      <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
       <file name="index.js" path="/Users/triciasawyer/projects/courses/code-401/store-front/src/store/cart/index.js">
-        <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="4" count="6" type="cond" truecount="3" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="26" count="4" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
       </file>
     </package>
     <package name="store.categories">
-      <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
       <file name="index.js" path="/Users/triciasawyer/projects/courses/code-401/store-front/src/store/categories/index.js">
-        <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
       </file>
     </package>
     <package name="store.products">
-      <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="/Users/triciasawyer/projects/courses/code-401/store-front/src/store/products/index.js">
-        <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="14" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
   </project>

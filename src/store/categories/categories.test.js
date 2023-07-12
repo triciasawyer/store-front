@@ -1,4 +1,4 @@
-import categoryReducer from './index';
+import categoryReducer, { setCategory, setInitialCategories } from './index';
 
 describe('Category Reducer', () => {
   test('should set the active category', () => {
@@ -11,13 +11,11 @@ describe('Category Reducer', () => {
       activeCategory: '',
     };
     const category = { name: 'electronics', displayName: 'Electronics' };
-    const action = { type: 'SET', payload: category };
 
-    const newState = categoryReducer(initialState, action);
+    const newState = categoryReducer(initialState, setCategory(category));
 
     expect(newState.activeCategory).toEqual(category);
   });
-
 
   test('should return the initial state for unknown action types', () => {
     const initialState = {
@@ -35,4 +33,20 @@ describe('Category Reducer', () => {
     expect(newState).toEqual(initialState);
   });
 
+  // Add a test for the setInitialCategories action
+  test('should set the initial categories', () => {
+    const initialState = {
+      categories: [],
+      activeCategory: '',
+    };
+    const categories = [
+      { name: 'electronics', displayName: 'Electronics' },
+      { name: 'food', displayName: 'Food' },
+      { name: 'clothing', displayName: 'Clothing' },
+    ];
+
+    const newState = categoryReducer(initialState, setInitialCategories(categories));
+
+    expect(newState.categories).toEqual(categories);
+  });
 });

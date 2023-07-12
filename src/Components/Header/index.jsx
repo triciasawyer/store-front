@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 // import './styles.scss';
 
 function Header() {
-  const { cart } = useSelector(state => state.cart);
+  const { cart } = useSelector(state => state);
   return (
     <>
       <AppBar>
