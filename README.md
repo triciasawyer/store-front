@@ -44,6 +44,15 @@ The user stories from Phases 1 and 2 remain unchanged. For this phase, we are no
 As a user, I want to interact with live inventory so that I have confidence that the displayed products are in stock.
 As a user, I want to know to that when I add an item to my cart, that it is removed from inventory so that no other users can purchase it.
 
+- Lab 39
+
+In phase 4, we will be completing work on our Virtual Store by adding two full page views to the application: Product Details and Checkout.
+
+The user stories from Phases 1, 2 and 3 remain unchanged. For this phase, we are now adding the following new user stories to meet the new requirements.
+
+As a user, I want to see a full detail view of a product so that I can make a more informed choice about purchasing it.
+As a user, I want to view my full cart and initiate the checkout process so that I can purchase my items and have them delivered.
+
 ### Links and Resources
 
 [Code sandbox](https://6k3j56-5173.csb.app/)
@@ -65,9 +74,9 @@ As a user, I want to know to that when I add an item to my cart, that it is remo
 ### Collaborators
 
 - Ryan Gallaway in code review
-- Stephen heped me in lab 36 with fixing the categories button display
+- Stephen Clemmer heped me in lab 36 with fixing the categories button display
 - Code review for lab 37 and 38 and chat gpt to help write tests
-- Daniel helped with reviewing code and helping me see some missing things that caused bugs
+- Daniel Frey helped with reviewing code and helping me see some missing things that caused bugs
 
 ### UML
 

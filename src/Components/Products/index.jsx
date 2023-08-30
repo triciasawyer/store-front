@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { When } from 'react-if';
+import { Link} from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -13,8 +14,8 @@ import { decrementInventoryOnAdd, getProducts } from '../../store/products';
 
 
 function Products() {
-    const { activeCategory } = useSelector((state) => state.categories)
-    const { products } = useSelector((state) => state)
+    const activeCategory = useSelector((state) => state.categories.activeCategory);
+    const products = useSelector((state) => state.products);
     // console.log('Productsss', products);
     const dispatch = useDispatch();
     
@@ -45,17 +46,13 @@ function Products() {
                                             {product.name}
                                         </Typography>
                                     </CardContent>
-                                    {/* <CardActions>
-                                        <Button onClick={() => dispatch(add(product))} size="small">ADD TO CART</Button>
-                                        <Button size="small">VIEW DETAILS</Button>
-                                    </CardActions> */}
                                     <CardActions>
                                         {product.inStock > 0 ? (
                                             <Button onClick={() => addDispatcher(product)} size="small">ADD TO CART</Button>
                                         ) : (
                                             <Button size="small" disabled>ADD TO CART</Button>
                                         )}
-                                        <Button size="small">VIEW DETAILS</Button>
+                                        <Button size="small" component={Link} to={`/productDetails/${product._id}`}>VIEW DETAILS</Button>
                                     </CardActions>
 
                                 </Card>
