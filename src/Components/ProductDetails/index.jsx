@@ -1,8 +1,9 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { Button, Card, CardActions, CardMedia, CardContent, Typography } from '@mui/material';
 import { addToCart } from "../../store/cart";
 import { decrementInventoryOnAdd } from "../../store/products";
+import { Link } from 'react-router-dom';
 
 function ProductDetails() {
 
@@ -15,6 +16,7 @@ function ProductDetails() {
     const addDispatcher = (product) => {
         dispatch(addToCart(product));
         dispatch(decrementInventoryOnAdd(product));
+        // const dispatch = useDispatch(addDispatcher);
     };
 
 
