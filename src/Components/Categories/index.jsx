@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Button from '@mui/material/Button';
 import { getCategories, setCategory } from '../../store/categories';
-// import { setProducts } from '../../store/products';
 
 function Categories() {
 
