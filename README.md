@@ -43,7 +43,7 @@ Phase 4 added two full page views to the application: Product Details and Checko
 
 ### Deployment
 
-[Code sandbox](https://6k3j56-5173.csb.app/)
+[CodeSandbox](https://6k3j56-5173.csb.app/)
 
 ### Links and Resources
 
